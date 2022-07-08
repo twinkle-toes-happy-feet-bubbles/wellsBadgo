@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /*margin: 10px 60px;*/
+  }
+  
+a {
+  text-decoration: none;
+  color: black;
+  }
+h1, h4, ol {
+  margin: 0;
+  }
+p {
+  margin: 5px 0;
+  }
+.top-bar {
+  background-color: orange;
+  padding: 0 30px;
+  font-size: 0.9em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+.main {
+ background-color: #F6F6EF;
+ padding: 10px 15px;
+ margin: 3px;
+  }
+ .row {
+  padding: 5px 3px;
+  font-size: 1em;
+  border-top: 2px solid #D5D5D5;
+  box-shadow: 2px 0px 2px 0px solid #4F4F4F8F;
+  max-height: 100px;
+  text-overflow: hidden;
+  }
+.bottom {
+  display: flex;
+  color: grey;
+  font-size: 12px;
+  }
+.timestamp {
+  padding-right: 10px;
+  }
+
+#postNew{
+  background: orange;
+  color: white;
+  font-weight: 800;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  border-radius: 50%;
+  margin: 10px;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+.btn{
+  display: none;
+}
+
+#title{
+  font-size: 1.5em;
+  font-family: monospace;
+  font-weight: 800;
+  padding: 6px;
+  margin: 3px;
+  letter-spacing: 0.3px;
+}
+#desc{
+  font-size: 0.9em;
+  padding: 6.3px;
+  margin: 1px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #2C2C2C;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#time{
+  font-size: 0.6em;
+  position: absolute;
+  right: 30px;
+  font-family: monospace;
+}
+#user{
+  font-size: 0.3em;
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  margin: 1px;
+  font-family: sans-serif;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="forum.css">
+  <title>Post - WellsBadgo</title>
+</head>
+
+<body>
+  <div class="top-bar">
+        <h1>
+            Write a post
+        </h1>
+    </div>
+    <div class="main">
+      <form class="forum" id="forum" autocomplete="off" action="submit">
+      <input name="title" placeholder="Title" type="text" id="Ptitle">
+      
+
+      <textarea name="description" placeholder="description" id="Pdescription"></textarea>
+      
+      <button id="postBtn">Post</button>
+      <button onclick="window.location.replace('home.html')" style="background: grey">Back</button>
+      </form>
+      <div class="pop" id="popupYes">
+        Posted! 
+      </div>
+      <div class="pop" id="popupNo">
+        Somethings Wrong. Couldn't post
+      </div>
+    </div>
+    
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+   
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+   
+     <script>
+       // Your web app's Firebase configuration
+       var firebaseConfig = {
+         apiKey: "AIzaSyAUSFtSt2TfjpHBETFPTndbhri46WOzZgE",
+         authDomain: "handpicked-41bf1.firebaseapp.com",
+         projectId: "handpicked-41bf1",
+         storageBucket: "handpicked-41bf1.appspot.com",
+         messagingSenderId: "478590437613",
+         appId: "1:478590437613:web:2c46ab6e4553b235e264e4"
+       };
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+       const db = firebase.firestore();
+     </script>
+   
+   <script src="forum.js">forum.js</script>
+    
+</body>
+
+</html>

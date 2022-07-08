@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <title>Home - WellsBadgo</title>
+</head>
+
+
+<body>
+    <div class="top-bar">
+        <h1>
+            WellsBadgo
+        </h1>
+    </div>
+    <div class="main">
+        
+        
+          <div class="container">
+            
+    <div class="table-wrapper">
+      <div class="table-posts">
+
+      </div>
+      <button class="btn btn-add">Add post</button>
+      
+    </div>
+
+        
+        
+        
+        
+
+
+
+        <button id="postNew" onclick="window.location.replace('forum.html')">+</button>
+    </div>
+      
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAUSFtSt2TfjpHBETFPTndbhri46WOzZgE",
+  authDomain: "handpicked-41bf1.firebaseapp.com",
+  projectId: "handpicked-41bf1",
+  storageBucket: "handpicked-41bf1.appspot.com",
+  messagingSenderId: "478590437613",
+  appId: "1:478590437613:web:2c46ab6e4553b235e264e4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+  <script src="index.js"></script>
+</body>
